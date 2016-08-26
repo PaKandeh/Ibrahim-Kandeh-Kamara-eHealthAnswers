@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Question 3: ARRAY COMPACTION </title>
+<h1 style="text-align:center;"> Ibrahim Kandeh Kamara </h1>
+<h2 style="text-align:center;">Question 3: ARRAY COMPACTION</h2>
+<h3>Array to be modified = [1, 2, 2, 4, 5, 4, 7, 8, 9, 10, 10, 11, 12, 13, 13, 13, 14, 14, 15, 16, 17, 18, 19, 19, 19, 20] <h3>
+<script>
+
+var myArray = [1, 2, 2, 4, 5, 4, 7, 8, 9, 10, 10, 11, 12, 13, 13, 13, 14, 14, 15, 16, 17, 18, 19, 19, 19, 20]; // array of # with duplicates to be modified
+
+function duplicateRemover(myArray) { // this function will remove the duplicate.
+  var i, len = myArray.length, newArray = [], temp = {};
+      
+  for (i=0; i<len; i++) {
+    temp[myArray[i]]=0;
+  }
+  for (i in temp) {
+    newArray.push(i);
+  }
+  return newArray;
+}
+
+result = duplicateRemover(myArray);
+
+</script>
+
+</head>
+<body style="background-color:powderblue;">
+<br>
+ <br>
+ <br>
+ <p> <button onclick="alert(result)">Click Me</button>
+ To display  the compact and transformed Array without duplicates.
+ </p>
+ 
+
+</body>
+
+<footer>
+
+<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+  <p>Posted by: Ibrahim Kandeh Kamara</p>
+  <p>Contact information:
+<br>  Mobile +232 079 160 036 / +232 088 660 393
+<br> Mail<a href="mailto:menamenaibit@gmail.com"> menamenaibit@gmail.com </a>.</p>
+  
+   
+</footer>
+</html>
+
+
