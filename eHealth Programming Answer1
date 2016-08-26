@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Question 1:  PERFECT NUMBERS </title>
+<h1 style="text-align:center;"> Ibrahim Kandeh Kamara </h1>
+<h2 style="text-align:center;">Question 1:  PERFECT NUMBERS</h2>
+<h3>When N = 6 <h3>
+
+<script>
+
+function myPerfectNumber(N) // function that check if the number is a perfect number or not.
+{
+var temp , i, N;
+temp = 0;
+   for( i=1;i<=N/2;i++)
+     {
+         if(N%i === 0)
+          {
+            temp += i;
+          }
+     }
+     if(temp === N && temp !== 0)
+        {
+		alert("N is a perfect number."); 
+      
+        } 
+     else
+        {
+		alert("N is not a perfect number.");
+    
+        }   
+ } 
+ N = 6;
+ 
+</script>
+
+</head>
+<body style="background-color:powderblue;">
+  <br>
+ <br>
+ <br>
+ <p>
+ <button onclick = "myPerfectNumber(N)"> Click Me</button>
+To show if 'N' is a perfect number or not. 
+ </p>
+ 
+ 
+</body>
+<footer>
+
+<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+  <p>Posted by: Ibrahim Kandeh Kamara</p>
+  <p>Contact information:
+<br>  Mobile +232 079 160 036 / +232 088 660 393
+<br> Mail<a href="mailto:menamenaibit@gmail.com"> menamenaibit@gmail.com </a>.</p>
+  
+   
+</footer>
+
+</html>
+
+
