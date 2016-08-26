@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Question 2:  CHARACTERS IN STRINGS </title>
+<h1 style="text-align:center;"> Ibrahim Kandeh Kamara </h1>
+<h2 style="text-align:center;">Question 2:  CHARACTERS IN STRINGS</h2>
+<h3>string1 = mynameisibrahim <br>
+string2 = mynameiskamara <h3>
+<script>
+
+var string1, string2; 
+string1 = "mynameisibrahim"; 
+string2 = "mynameiskamara";
+    
+function find_chars(string1, string2)  { /* function that returns a newString with characters found in string1
+											and string2 in the order that they are found in string1.*/
+
+    var newString = [], temp2 = {}, i, temp1;
+	var len = string2.length;
+    for (i = 0; i < len; i++) {
+        temp2[string2[i]] = true;
+    }
+    len = string1.length;
+    for (i = 0; i < len; i++) {
+        temp1 = string1[i];
+        if (temp1 in temp2) {
+            newString.push(temp1);
+        }
+    }
+    return newString;
+}
+
+
+</script>
+
+</head>
+<body style="background-color:powderblue;">
+<br>
+ <br>
+ <br>
+ <p> <button onclick="alert(find_chars(string1, string2))">Click Me</button> 
+ To display  characters only found in string1 and string2 in the order that they are found in string1.
+ </p>
+ 
+</body>
+
+<footer>
+
+<br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+  <p>Posted by: Ibrahim Kandeh Kamara</p>
+  <p>Contact information:
+<br>  Mobile +232 079 160 036 / +232 088 660 393
+<br> Mail<a href="mailto:menamenaibit@gmail.com"> menamenaibit@gmail.com </a>.</p>
+  
+   
+</footer>
+
+</html>
+
+
